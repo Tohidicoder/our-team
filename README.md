@@ -12,6 +12,7 @@ A responsive **Our Team** section built with **HTML and CSS**.
 
 ## Technologies
 
+
 * HTML5
 * CSS3
 
