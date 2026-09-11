@@ -1,0 +1,554 @@
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #171717;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #171717;
+    white-space: nowrap;
+} 
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Star / flower shape */
+.logo-icon {
+    width: 22px;
+    height: 22px;
+
+    background: #111827;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+
+    /* star-like shape */
+    clip-path: polygon(
+        50% 0%,
+        61% 30%,
+        88% 12%,
+        72% 42%,
+        100% 50%,
+        72% 58%,
+        88% 88%,
+        61% 70%,
+        50% 100%,
+        39% 70%,
+        12% 88%,
+        28% 58%,
+        0% 50%,
+        28% 42%,
+        12% 12%,
+        39% 30%
+    );
+}
+
+.logo span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #1769e8;
+}
+
+
+/* =========================================
+   NAV BUTTONS
+========================================= */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #1769e8;
+    border: 1px solid #1769e8;
+}
+
+.login-btn:hover {
+    background-color: #1769e8;
+    color: #ffffff;
+}
+
+.signup-btn {
+    background-color: #1769e8;
+    color: #ffffff;
+    border: 1px solid #1769e8;
+}
+
+.signup-btn:hover {
+    background-color: #0d55c7;
+}
+
+
+/* =========================================
+   TEAM SECTION
+========================================= */
+
+.team-section {
+    width: 100%;
+    padding: 65px 55px 60px;
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   TEAM HEADER
+========================================= */
+
+.team-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.team-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #171717;
+}
+
+.team-header p {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TEAM GRID
+========================================= */
+
+.team-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================
+   TEAM CARD
+========================================= */
+
+.team-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   TEAM IMAGE
+========================================= */
+
+.team-card img {
+    width: 100%;
+    height: 180px;
+    display: block;
+
+    /*
+       contain = show the complete image
+       without cutting the face or body.
+    */
+    object-fit: contain;
+    object-position: center center;
+
+    background-color: #f5f5f5;
+}
+
+
+/* =========================================
+   MEMBER INFORMATION
+========================================= */
+
+.member-info {
+    padding: 14px 12px 15px;
+}
+
+.member-info h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #171717;
+}
+
+.member-info p {
+    color: #1769e8;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+/* =========================================
+   BOTTOM SECTION
+========================================= */
+
+.bottom-section {
+    width: 100%;
+    padding: 55px 55px 65px;
+    text-align: center;
+    background-color: #f8f9fb;
+    border-top: 1px solid #eeeeee;
+}
+
+.bottom-section h2 {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #171717;
+}
+
+
+/* =========================================
+   EMAIL BOX
+========================================= */
+
+.email-box {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-box input {
+    flex: 1;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+.email-box input:focus {
+    border-color: #1769e8;
+}
+
+.email-box button {
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid #1769e8;
+    border-radius: 6px;
+    background-color: #1769e8;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.email-box button:hover {
+    background-color: #0d55c7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .page {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .team-section {
+        padding: 50px 35px;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .team-card img {
+        height: 220px;
+        object-fit: contain;
+        object-position: center center;
+        background-color: #f5f5f5;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .page {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .navbar {
+        height: 65px;
+        padding: 0 25px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .team-section {
+        padding: 45px 25px;
+    }
+
+    .team-header {
+        margin-bottom: 40px;
+    }
+
+    .team-header h1 {
+        font-size: 27px;
+    }
+
+    .team-header p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-card img {
+        width: 100%;
+        height: 210px;
+        object-fit: contain;
+        object-position: center center;
+        background-color: #f5f5f5;
+    }
+
+    .member-info {
+        padding: 14px;
+    }
+
+    .member-info h3 {
+        font-size: 13px;
+    }
+
+    .member-info p {
+        font-size: 10px;
+    }
+
+    .bottom-section {
+        padding: 40px 25px 50px;
+    }
+
+    .bottom-section h2 {
+        font-size: 20px;
+    }
+
+    .email-box {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .page {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .navbar {
+        height: 65px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .signup-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .team-section {
+        padding: 40px 18px;
+    }
+
+    .team-header {
+        margin-bottom: 35px;
+    }
+
+    .team-header h1 {
+        font-size: 24px;
+    }
+
+    .team-header p {
+        width: 100%;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: contain;
+        object-position: center center;
+        background-color: #f5f5f5;
+    }
+
+    .member-info {
+        padding: 15px;
+    }
+
+    .member-info h3 {
+        font-size: 14px;
+    }
+
+    .member-info p {
+        font-size: 11px;
+    }
+
+    .bottom-section {
+        padding: 35px 18px 45px;
+    }
+
+    .bottom-section h2 {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .email-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .email-box input,
+    .email-box button {
+        width: 100%;
+    }
+}
+
